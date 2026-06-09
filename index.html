@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saqib's Blook Helper</title>
+
+    
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title"
+        content="Saqib's Blook Helper – Deploy Bots to Blooket Games">
+    <meta property="og:description"
+        content="Saqib's Blook Helper: Dominate quizzes effortlessly with bots! The ultimate helper tool for quiz supremacy!">
+ 
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Saqib's Blook Helper">
+
+    <!-- Dynamic canonical tag for all pages including language versions -->
+    <link rel="canonical" href="https://blooketbot.com/single_bot">
+
+    <!-- Dynamic Open Graph and Twitter URL tags for social sharing -->
+    <meta property="og:url" content="https://blooketbot.com/single_bot">
+    <meta name="twitter:url" content="https://blooketbot.com/single_bot">
+
+    <!-- Hreflang tags for multilingual support -->
+    
+    
+    
+    
+    <link rel="alternate" hreflang="en" href="https://blooketbot.com/single_bot">
+    <link rel="alternate" hreflang="es" href="https://blooketbot.com/es/single_bot">
+    <link rel="alternate" hreflang="fr" href="https://blooketbot.com/fr/single_bot">
+    <link rel="alternate" hreflang="ar" href="https://blooketbot.com/ar/single_bot">
+    <link rel="alternate" hreflang="nl" href="https://blooketbot.com/nl/single_bot">
+    <link rel="alternate" hreflang="sv" href="https://blooketbot.com/sv/single_bot">
+    <link rel="alternate" hreflang="pl" href="https://blooketbot.com/pl/single_bot">
+    <link rel="alternate" hreflang="no" href="https://blooketbot.com/no/single_bot">
+    <link rel="alternate" hreflang="fi" href="https://blooketbot.com/fi/single_bot">
+    <link rel="alternate" hreflang="th" href="https://blooketbot.com/th/single_bot">
+    <link rel="alternate" hreflang="x-default" href="https://blooketbot.com/single_bot">
+
+    <!-- Performance: Preconnect to critical origins -->
+    <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="dns-prefetch" href="//zalgo.org">
+    <link rel="dns-prefetch" href="//www.highperformanceformat.com">
+
+    <link rel="icon" href="/static/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/static/images/blooket_icon16.webp" sizes="16x16"
+        type="image/webp">
+    <link rel="icon" href="/static/images/blooket_icon32.webp" sizes="32x32"
+        type="image/webp">
+    <link rel="icon" href="/static/images/blooket_icon192.webp" sizes="192x192"
+        type="image/webp">
+    <link rel="icon" href="/static/images/blooket_icon144.webp" sizes="144x144"
+        type="image/webp">
+    <link rel="apple-touch-icon" href="/static/images/blooket_icon180.webp" sizes="180x180"
+        type="image/webp">
+    <link rel="apple-touch-icon-precomposed" href="/static/images/blooket_icon180.webp">
+
+    <!-- Yandex -->
+    <meta name="yandex-verification" content="719560a265193d04" />
+    <!-- Google tag (gtag.js) -->
+    <script>
+        function loadAnalytics() {
+            if (window.analyticsLoaded) return;
+            window.analyticsLoaded = true;
+
+            const gtagScript = document.createElement('script');
+            gtagScript.src = "https://www.googletagmanager.com/gtag/js?id=G-34ZZ69LFNW";
+            gtagScript.async = true;
+            document.head.appendChild(gtagScript);
+
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-34ZZ69LFNW');
+        }
+
+        ['click', 'scroll', 'mousemove', 'touchstart'].forEach(evt => {
+            window.addEventListener(evt, loadAnalytics, { once: true });
+        });
+    </script>
+  
+
+   
+
+    <!-- CSS loaded synchronously to prevent FOUC -->
+    <link rel="stylesheet" href="./style.min.css">
+
+    <!-- Performance: Defer JavaScript to prevent render blocking -->
+    <script src="./scripts.js" defer></script>
+</head>
+
+<body>
+
+    <header class="main-header">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid nav_container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">
+                        <img src="/static/images/blooket_logo.png" loading="lazy"
+                            alt="Saqib's Blook Helper logo" width="132" height="59">
+                    </a>
+                </div>
+                <div class="navbar-collapse" id="nav">
+                    <!-- Search Icon + Search Box -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li ><a
+                                href="/" aria-label="Home">
+                                <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+                                </svg>
+                            </a></li>
+                        <li class="active" ><a
+                                href="/single_bot">Blook Helper</a></li>
+
+                        <li class="nav-search">
+                            <a href="#" id="searchToggle" aria-label="Search">
+                                <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                                </svg>
+                            </a>
+                            <div id="searchBox" class="search-box">
+                                <form onsubmit="searchPage(); return false;">
+                                    <input type="hidden" name="q" value="site:blooketbot.com">
+                                    <input type="text" name="q" placeholder="Search..."
+                                        aria-label="Search this site">
+                                </form>
+                            </div>
+                        </li>
+                        <li>
+
+                            <!-- Inside templates/base.html -->
+
+                            <div class="language-selector">
+                                <div class="cust-select-wrapper">
+                                    <form action="/set-language" method="post" id="lang-form">
+                                        <input type="hidden" name="endpoint" value="default.single_bot">
+                                        <input type="hidden" name="view_args" value="{}">
+                                        <select name="language" onchange="document.getElementById('lang-form').submit()"
+                                            aria-label="Select language">
+                                            <option value="en" selected>English</option>
+                                            <option value="es" >Spanish</option>
+                                            <option value="fr" >French</option>
+                                            <option value="ar" >Arabic</option>
+                                            <option value="nl" >Dutch</option>
+                                            <option value="sv" >Swedish</option>
+                                            <option value="pl" >Polish</option>
+                                            <option value="no" >Norwegian</option>
+                                            <option value="fi" >Finnish</option>
+                                            <option value="th" >Thai</option>
+
+                                        </select>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container_custom">
+        
+<div class="container">
+
+
+
+    <h1 class="blooketbot_title" style="margin-bottom: 10px;" title="Saqib's Blook Helper">
+        Saqib's Blook Helper</h1>
+    <div class="status-badge">
+        <div class="status-dot"></div>
+        <span
+            style="display: inline-block; max-width: 100%; word-wrap: break-word; overflow-wrap: break-word; white-space: normal;">v1.2.8 • Updated April 27, 2026 • <strong>X-GUI Blooket Client NOW LIVE! 🎮</strong></span>
+    </div>
+
+   
+
+    <div class="mainBody mainBody-container">
+        <div class="_checkers_l90pt_12"></div>
+        <div class="chat" style="top: 350px; left: 200px; display: none">
+            <div class="chatcontainer">
+                <div class="chatmsg"></div>
+            </div>
+            <div class="chatinpcontainer">
+                <input id="chat" placeholder="Type a message...">
+            </div>
+            <div class="dragcontainer">
+                <div id="drag">Drag</div>
+            </div>
+        </div>
+        <div class="codecontainer" id="cc">
+            <div class="main-content-join">
+                <div class="inputboxcontainer">
+                    <div class="idInputContainer flex">
+                        <div class="idInputContainer">
+                            <span class="normtext">Enter code:</span>
+                            <input id="gcode" class="idInput" placeholder="Game ID">
+                        </div>
+                    </div>
+                    <div class="idInputContainer flex">
+                        <div class="nameInputContainer">
+                            <span class="normtext">Nickname:</span>
+                            <input id="gname" class="nameInput" placeholder="Nickname">
+                        </div>
+                    </div>
+                </div>
+                <div class="toggles-section">
+                    <div class="toggle-container">
+                        <span class="normtext">Incognito Mode:</span>
+                        <checkbox id="icogmode" checked="true"></checkbox>
+                    </div>
+                    <div class="toggle-container">
+                        <span class="normtext">Bypass Name Filter:</span>
+                        <checkbox id="bcf"></checkbox>
+                    </div>
+                    <div class="toggle-container">
+                        <span class="normtext">First Place Switch:</span>
+                        <checkbox id="fpswitch" checked="true"></checkbox>
+                    </div>
+                </div>
+
+              
+
+                <div class="joinButton" onclick="send();" role="button">
+                    <div class="btext">Join</div>
+                </div>
+
+                <div class="normtext" id="status">Status: Ready</div>
+                <div class="log" id="log"></div>
+
+           
+            </div>
+
+        </div>
+        <div id="ctrlpanel"></div>
+    </div>
+
+    </div>
+
+    
+    <div style="margin-top: 20px; margin-bottom: 20px; text-align: center; font-family: sans-serif;">
+        <h3 style="color: #444; margin-bottom: 10px;">⚡️ Dominate Other Games</h3>
+
+        <div style="display: flex; justify-content: center; gap: 25px; flex-wrap: wrap;">
+
+            <a href="https://kahootbot.app" target="_blank" rel="noopener"
+                style="flex: 1; min-width: 140px; max-width: 220px; text-decoration: none; background: linear-gradient(135deg, #46178f, #864cbf); padding: 15px; border-radius: 12px; color: white; box-shadow: 0 4px 15px rgba(70, 23, 143, 0.3); transition: transform 0.2s;"
+                onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                <div style="font-size: 28px; margin-bottom: 8px;">🚀</div>
+                <div style="font-weight: bold; font-size: 16px;">Kahoot Bot</div>
+                <div style="font-size: 11px; opacity: 0.9;">Smash Games</div>
+            </a>
+
+            <a href="https://gimkitbot.com" target="_blank" rel="noopener"
+                style="flex: 1; min-width: 140px; max-width: 220px; text-decoration: none; background: linear-gradient(135deg, #2f2f2f, #000000); padding: 15px; border-radius: 12px; color: white; box-shadow: 0 4px 15px rgba(0,0,0, 0.3); transition: transform 0.2s;"
+                onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                <div style="font-size: 28px; margin-bottom: 8px;">⚡️</div>
+                <div style="font-weight: bold; font-size: 16px;">Gimkit Bot</div>
+                <div style="font-size: 11px; opacity: 0.9;">Flooder Tool</div>
+            </a>
+
+            <a href="https://waygroundbot.com" target="_blank" rel="noopener"
+                style="flex: 1; min-width: 140px; max-width: 220px; text-decoration: none; background: linear-gradient(135deg, #3a7bd5, #00d2ff); padding: 15px; border-radius: 12px; color: white; box-shadow: 0 4px 15px rgba(0, 210, 255, 0.3); transition: transform 0.2s;"
+                onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                <div style="font-size: 28px; margin-bottom: 8px;">🎮</div>
+                <div style="font-weight: bold; font-size: 16px;">Wayground Bot</div>
+                <div style="font-size: 11px; opacity: 0.9;">Game Tools</div>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- Premium Lobby Promotional Section -->
+    <div class="pro-mode-section">
+        <a href="/premium-lobby" class="joinButton" role="button">
+            <div class="btext" style="font-size: 20px; padding: 10px 0;">🔥 UNLOCK 3-BOT MODE 🔥 (Now Live)
+            </div>
+        </a>
+        <h2>🔥 Want More Power? Deploy 3 Bots!</h2>
+        <p>Unlock the ability to deploy up to 3 bots simultaneously for maximum game domination and strategic
+            control.</p>
+        <div class="pro-features">
+            <div class="feature-item">
+                <span class="icon">⚡</span>
+                <span>Deploy 1-3 Bots</span>
+            </div>
+            <div class="feature-item">
+                <span class="icon">🎯</span>
+                <span>Strategic Control</span>
+            </div>
+            <div class="feature-item">
+                <span class="icon">🚀</span>
+                <span>Instant Domination</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="changelog-wrapper">
+        <button class="changelog-toggle" onclick="toggleChangelog(this)">
+            <span>📅 Recent Updates & Changelog</span>
+            <span class="toggle-icon">▼</span>
+        </button>
+        <div class="changelog-content" id="changelog-list">
+
+            <!-- v1.2.7 - Single Bot Performance Boost -->
+            <div class="update-item">
+                <div class="update-dot latest"></div>
+                <div class="version-header">
+                    <span class="version-tag new">v1.2.7</span> <span class="version-date">Jan 31,
+                        2026</span>
+             
+       
+
+        
+
+      
+    
+
+          
+
+    <script>
+        function toggleChangelog(button) {
+            var content = document.getElementById("changelog-list");
+            button.classList.toggle("active");
+
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
+    </script>
+
+   
+
+    <!-- Installation Methods Grid -->
+    <div
+        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; margin: 30px auto; max-width: 1200px;">
+
+        <!-- Box 1: Bookmarklet -->
+        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 30px; border-radius: 16px; box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3); transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative; overflow: hidden;"
+            onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 15px 40px rgba(102, 126, 234, 0.5)'"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(102, 126, 234, 0.3)'">
+
+            <!-- Decorative gradient overlay -->
+            <div
+                style="position: absolute; top: -50%; right: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%); pointer-events: none;">
+            </div>
+
+            <div style="position: relative; z-index: 1;">
+                <div style="text-align: center; margin-bottom: 20px;">
+                    <div style="font-size: 48px; margin-bottom: 10px;">🎮</div>
+                    <h3 style="color: #fff; font-size: 24px; font-weight: 700; margin: 0 0 8px 0;">X-GUI
+                        Bookmarklet</h3>
+                    <p style="color: rgba(255,255,255,0.9); font-size: 14px; margin: 0;">Quick & Easy</p>
+                </div>
+
+                <div
+                    style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); padding: 20px; border-radius: 12px; margin-bottom: 20px;">
+                    <p style="color: #fff; font-size: 16px; line-height: 1.6; margin: 0 0 15px 0;">Drag the button
+                        below to your bookmarks bar, then click it while on blooket.com to activate X-GUI instantly!</p>
+                    <div
+                        style="text-align: center; padding: 15px; background: rgba(0,0,0,0.2); border-radius: 8px; border: 2px dashed rgba(255,255,255,0.3);">
+                        <a id="xgui-bookmarklet" class="drag-box" href="#"
+                            style="cursor: move; background: #fff; color: #667eea; padding: 12px 24px; border-radius: 8px; display: inline-block; font-weight: 700; text-decoration: none; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+                            🎮 X-GUI
+                        </a>
+                        <p style="color: rgba(255,255,255,0.8); font-size: 13px; margin: 10px 0 0 0;">← Drag to
+                            bookmarks bar</p>
+                    </div>
+                </div>
+
+                <div style="background: rgba(0,0,0,0.2); padding: 12px; border-radius: 8px;">
+                    <p style="color: #fff; font-size: 13px; margin: 0; line-height: 1.5;">
+                        <strong>✨ Pro Tip:</strong> Works on any browser, no installation needed!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Box 2: Browser Extension (Recommended) -->
+        <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); padding: 30px; border-radius: 16px; box-shadow: 0 10px 30px rgba(245, 87, 108, 0.3); transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative; overflow: hidden;"
+            onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 15px 40px rgba(245, 87, 108, 0.5)'"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(245, 87, 108, 0.3)'">
+
+            <!-- "Recommended" badge -->
+            <div
+                style="position: absolute; top: 15px; right: 15px; background: rgba(255,255,255,0.9); color: #f5576c; padding: 6px 12px; border-radius: 20px; font-size: 12px; font-weight: 700; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+                ⭐ RECOMMENDED
+            </div>
+
+            <!-- Decorative gradient overlay -->
+            <div
+                style="position: absolute; top: -50%; right: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%); pointer-events: none;">
+            </div>
+
+            <div style="position: relative; z-index: 1;">
+                <div style="text-align: center; margin-bottom: 20px;">
+                    <div style="font-size: 48px; margin-bottom: 10px;">📦</div>
+                    <h3 style="color: #fff; font-size: 24px; font-weight: 700; margin: 0 0 8px 0;">Browser
+                        Extension</h3>
+                    <p style="color: rgba(255,255,255,0.9); font-size: 14px; margin: 0;">Bypasses CSP/CORS
+                    </p>
+                </div>
+
+                <div
+                    style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); padding: 20px; border-radius: 12px; margin-bottom: 20px;">
+                    <p style="color: #fff; font-size: 16px; line-height: 1.6; margin: 0 0 15px 0;">Most powerful
+                        option! Download and install as a browser extension for maximum compatibility.</p>
+                    <div style="text-align: center;">
+                        <a href="/static/x-gui.zip" download="x-gui-extension.zip"
+                            style="background: #fff; color: #f5576c; padding: 14px 28px; border-radius: 8px; display: inline-block; font-weight: 700; text-decoration: none; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: transform 0.2s;"
+                            onmouseover="this.style.transform='scale(1.05)'"
+                            onmouseout="this.style.transform='scale(1)'">
+                            📦 Download Extension
+                        </a>
+                    </div>
+                </div>
+
+                <div style="background: rgba(0,0,0,0.2); padding: 12px; border-radius: 8px;">
+                    <p style="color: #fff; font-size: 12px; margin: 0 0 8px 0; line-height: 1.5;">
+                        <strong>Installation Steps:</strong>
+                    </p>
+                    <ol
+                        style="color: rgba(255,255,255,0.9); font-size: 12px; margin: 0; padding-left: 18px; line-height: 1.6;">
+                        <li>Unzip the downloaded file</li>
+                        <li>Go to browser extensions</li>
+                        <li>Enable Developer Mode</li>
+                        <li>Click "Load Unpacked"</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Box 3: Tampermonkey Userscript -->
+        <div style="background: linear-gradient(135deg, #00caee 0%, #0dc1df 100%); padding: 30px; border-radius: 16px; box-shadow: 0 10px 30px rgba(13, 193, 223, 0.3); transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative; overflow: hidden;"
+            onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 15px 40px rgba(13, 193, 223, 0.5)'"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(13, 193, 223, 0.3)'">
+
+            <!-- Decorative gradient overlay -->
+            <div
+                style="position: absolute; top: -50%; right: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%); pointer-events: none;">
+            </div>
+
+            <div style="position: relative; z-index: 1;">
+                <div style="text-align: center; margin-bottom: 20px;">
+                    <div style="font-size: 48px; margin-bottom: 10px;">🔧</div>
+                    <h3 style="color: #fff; font-size: 24px; font-weight: 700; margin: 0 0 8px 0;">Tampermonkey
+                        Script</h3>
+                    <p style="color: rgba(255,255,255,0.9); font-size: 14px; margin: 0;">For Advanced Users
+                    </p>
+                </div>
+
+                <div
+                    style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); padding: 20px; border-radius: 12px; margin-bottom: 20px;">
+                    <p style="color: #fff; font-size: 16px; line-height: 1.6; margin: 0 0 15px 0;">Use
+                        Tampermonkey to automatically load X-GUI on Blooket. Perfect for power users!</p>
+                    <div style="text-align: center;">
+                        <a href="/static/X-GUI.USER.JS" download="X-GUI.user.js"
+                            style="background: #fff; color: #0dc1df; padding: 14px 28px; border-radius: 8px; display: inline-block; font-weight: 700; text-decoration: none; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: transform 0.2s;"
+                            onmouseover="this.style.transform='scale(1.05)'"
+                            onmouseout="this.style.transform='scale(1)'">
+                            🔧 Download Userscript
+                        </a>
+                    </div>
+                </div>
+
+                <div style="background: rgba(0,0,0,0.2); padding: 12px; border-radius: 8px;">
+                    <p style="color: #fff; font-size: 12px; margin: 0 0 8px 0; line-height: 1.5;">
+                        <strong>Requirements:</strong>
+                    </p>
+                    <ul
+                        style="color: rgba(255,255,255,0.9); font-size: 12px; margin: 0; padding-left: 18px; line-height: 1.6;">
+                        <li>Install Tampermonkey extension</li>
+                        <li>Click the downloaded X-GUI.user.js file</li>
+                        <li>Auto-loads on blooket.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Fetch the X-GUI bookmarklet code and embed it directly in the href
+        fetch('/static/X-GUI.MIN.JS')
+            .then(response => response.text())
+            .then(code => {
+                document.getElementById('xgui-bookmarklet').href = code;
+            })
+            .catch(err => console.error('Failed to load X-GUI:', err));
+    </script>
+
+    <div class="box-container">
+        <p class="custom-text">Great news! Saqib's Blook Helper web client is live and fully operational! 🎉 If you run
+            into any issues, don't worry—you can always try BCP (Blooket Cheats Plus), created by Saqib and
+            loaded with even more powerful features.</p>
+        <p class="custom-text">BCP has been fixed and updated to version 15.5, bringing even more features and
+            improvements.</p>
+        <p class="custom-text">Follow the steps below to get started with BCP:</p>
+        <div class="center-container">
+            <p>
+                <a id="bcp-bookmarklet" class="drag-box" href="#" style="cursor: move;">
+                    🚀 BCP
+                </a>
+                ← Drag this to your bookmarks bar, then click it on blooket.com
+            </p>
+        </div>
+
+        <script>
+            // Fetch the bookmarklet code and embed it directly in the href
+            fetch('/static/gui.min.js')
+                .then(response => response.text())
+                .then(code => {
+                    document.getElementById('bcp-bookmarklet').href = code;
+                })
+                .catch(err => console.error('Failed to load BCP:', err));
+        </script>
+    </div>
+
+    <p class="normtext">How to Use:</p>
+    <ol>
+        <li>Drag the button above into your bookmarks bar.</li>
+        <li>Open Blooket and join a game.</li>
+        <li>Once you're in the game, click the BCP bookmark to access the cheat menu.</li>
+        <li>If you want to dive deeper and learn more, check out the tutorial video provided below!</li>
+    </ol>
+
+    <p class="normtext normtext-margin-top"><strong>Troubleshooting Content Security Policy (CSP) Issues:</strong></p>
+    <p>Some websites like Blooket use Content Security Policy (CSP) to restrict which scripts can run. Our script
+        now uses nonce-based loading to comply with these restrictions.</p>
+
+    <div class="csp-info-box">
+        <p><strong>If you see CSP errors in the console:</strong></p>
+        <ol>
+            <li>Our updated bookmarklet automatically tries to use the site's CSP nonce</li>
+            <li>Try using the "BCP" button which also implements nonce-based loading</li>
+            <li>If problems persist, try the manual script injection method below which includes CSP
+                compatibility</li>
+        </ol>
+
+        <p><strong>Manual Script Injection Method:</strong></p>
+        <ol>
+            <li>Open Blooket.com and join a game to use the script</li>
+            <li>Open your browser's developer console (F12 or right-click → Inspect → Console)</li>
+            <li>Copy and paste the following code:</li>
+        </ol>
+
+
+
+        <div class="code-container">
+            <pre id="consoleCode">const script = document.createElement('script');
+                script.id = 'bcp-script';
+
+                const nonceElement = document.querySelector('script[nonce]');
+                if (nonceElement &amp;&amp; nonceElement.nonce) {
+                script.setAttribute('nonce', nonceElement.nonce);
+                }
+
+                script.src = 'https://blooketbot.com/gui.min.js';
+                script.onload = function() {
+                console.log('BCP script loaded successfully!');
+                };
+                script.onerror = function(error) {
+                console.error('Error loading BCP script:', error);
+                };
+
+                document.body.appendChild(script);
+            </pre>
+            <button onclick="copyConsoleCode()" class="copy-button">Copy Code</button>
+        </div>
+
+        <script>
+            function copyConsoleCode() {
+                const codeText = document.getElementById('consoleCode').innerText;
+                navigator.clipboard.writeText(codeText)
+                    .then(() => {
+                        alert("Code copied to clipboard! Now paste it into the Blooket console.");
+                    })
+                    .catch(err => {
+                        console.error('Error copying text: ', err);
+                        alert("Failed to copy code. Please select and copy it manually.");
+                    });
+            }
+        </script>
+    </div>
+
+    <div class="tutorial-divider"></div>
+    <p class="normtext tutorial-text-centered">Tutorial video:</p>
+
+    <div class="video-container">
+        <div class="video-facade" onclick="loadVideo(this)" data-id="C0TrYVy0Yg8">
+            <img src="/static/images/thumbnail.jpg" alt="Tutorial Video">
+        </div>
+    </div>
+
+    <h2>Saqib's Blook Helper: Master Your Game with Ease</h2>
+    <p>Looking to level up your Blooket game? Saqib's Blook Helper is your go-to tool! Designed for both competitive
+        play and fun, this helper offers unmatched features and ease of use.</p>
+
+    <h3>Introduction to the Blook Helper</h3>
+    <p>Saqib's Blook Helper is an advanced tool crafted for Blooket games, making it simple to deploy bots. It’s ideal for those wanting to enhance their gaming
+        experience.</p>
+
+    <h3>Deploying a Bot with Blook Helper</h3>
+    <p>With Saqib's Blook Helper, deploying a bot to your Blooket game is simple and effective. Follow these easy
+        steps:</p>
+    <ol>
+        <li><strong>Visit the HomePage:</strong> Visit Saqib's Blook Helper.</li>
+        <li><strong>Visit the Blook Helper Page:</strong> Navigate to the Blook Helper deploy page
+            from the menu.</li>
+        <li><strong>Enter Game Code:</strong> Obtain your Blooket game code and enter it in the
+            designated field.</li>
+        <li><strong>Customize Your Bot:</strong> Personalize your bot's name for seamless
+            integration.</li>
+        <li><strong>Deploy and Manage:</strong> Click the "Join" button and watch as your bot joins
+            the game. Manage your bot through Saqib's Blook Helper interface.</li>
+    </ol>
+
+    <h3>Features</h3>
+    <ul>
+        <li><strong>Custom Bot Names:</strong> Avoid detection with unique bot names.</li>
+        <li><strong>User-Friendly Interface:</strong> Easy to navigate and deploy bots.</li>
+        <li><strong>Up-to-Date Performance:</strong> Regular updates ensure smooth operation.</li>
+    </ul>
+
+    <h3>Functionality of the Blook Helper</h3>
+    <p>Saqib's Blook Helper is built for simplicity and performance. It features an intuitive interface and a powerful
+        backend, allowing it to populate Blooket games with bots rapidly. Each bot can be given custom names to blend in
+        naturally with other players.</p>
+    <div class="image-container">
+        <div class="image-wrapper">
+            <img src="/static/images/blooket_bot_image.webp"
+                alt="Illustration of Saqib's Blook Helper in action, showcasing features such as answer assistance and flooding capabilities"
+                loading="lazy">
+        </div>
+    </div>
+
+
+
+    <h3>Safety Considerations for the Blook Helper</h3>
+    <p>Saqib's Blook Helper is designed solely for entertainment purposes and is secure to use, posing no inherent
+        risks. However, it's essential to use it responsibly to avoid disrupting others' learning sessions. While
+        enjoying the helper for fun, ensure you prioritize educational activities when necessary.</p>
+
+    <h3>Safety and Privacy</h3>
+    <p>Saqib's Blook Helper ensures your actions remain private and secure, designed purely for entertainment.</p>
+    <p>Enhance your Blooket gaming experience with ease! Use Saqib's Blook Helper to <a
+            href="/">join any Blooket game</a> today and master your game.</p>
+
+    <h3>Frequently Asked Questions</h3>
+    <div class="faq-container">
+        <div class="faq-item">
+            <div class="question-container">
+                <h4 class="question">Q: How does the Blook Helper function?</h4>
+                <div class="arrow-down"></div>
+            </div>
+            <div class="answer">
+                <p>A: Saqib's Blook Helper operates by connecting to the game and mimicking manual participation,
+                    flooding the session with multiple connections to create challenges for legitimate players.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="question-container">
+                <h4 class="question">Q: Is the Blook Helper suitable for my needs?</h4>
+                <div class="arrow-down"></div>
+            </div>
+            <div class="answer">
+                <p>A: Saqib's Blook Helper ensures anonymous operation, maintaining your actions private from other
+                    users, providing reliability.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="question-container">
+                <h4 class="question">Q: Can I customize Blook Helper behavior?</h4>
+                <div class="arrow-down"></div>
+            </div>
+            <div class="answer">
+                <p>A: Yes, with Saqib's Blook Helper, users can customize behavior options like bot quantity or
+                    name, and many more things.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="question-container">
+                <h4 class="question">Q: Is using the Blook Helper legal?</h4>
+                <div class="arrow-down"></div>
+            </div>
+            <div class="answer">
+                <p>A: While legality may vary based on terms of service, use should align with ethical
+                    standards.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="question-container">
+                <h4 class="question">Q: Why might the Blook Helper not function?</h4>
+                <div class="arrow-down"></div>
+            </div>
+            <div class="answer">
+                <p>A: Occasionally, robust host systems may require multibot spam selections to increase
+                    connections, challenging player success.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" onclick="scrollToTop()" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <script>
+        // Show/hide back to top button based on scroll position
+        const backToTopButton = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', function () {
+            if (window.pageYOffset > 400) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+
+        // Smooth scroll to top
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+
+</div>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-follow">
+                <span style="font-size: 1em; color: #fff;">Follow Us:</span>
+                <a href="https://www.youtube.com/@Noxeto-v1t" target="_blank" rel="noopener noreferrer"
+                    class="footer-social-link" aria-label="Follow us on YouTube" title="YouTube">
+                    <svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/noxeto07/" target="_blank" rel="noopener noreferrer"
+                    class="footer-social-link" aria-label="Follow us on Instagram"
+                    title="Instagram">
+                    <svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                    </svg>
+                </a>
+                <a href="https://x.com/noxeto1" target="_blank" rel="noopener noreferrer" class="footer-social-link"
+                    aria-label="Follow us on X (Twitter)" title="X (Twitter)">
+                    <svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                    </svg>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61575261156544" target="_blank"
+                    rel="noopener noreferrer" class="footer-social-link" aria-label="Follow us on Facebook"
+                    title="Facebook">
+                    <svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                    </svg>
+                </a>
+            </div>
+
+            <style>
+                .footer-follow {
+                    margin: 15px 0;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 18px;
+                    flex-wrap: wrap;
+                }
+
+                .footer-social-link {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #fff;
+                    transition: transform 0.3s ease;
+                    opacity: 1;
+                }
+
+                .footer-social-link:hover {
+                    color: #fff;
+                    transform: translateY(-3px);
+                }
+
+                .footer-social-link svg {
+                    width: 22px;
+                    height: 22px;
+                }
+            </style>
+
+            <div class="footer-extra">
+                <ul class="footer-links">
+                    <li><a href="/" aria-label="Home">
+                            <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+                            </svg>
+                        </a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
+                    <li><a href="/privacy">Privacy Policy</a></li>
+                    <li><a href="/disclaimer">Disclaimer</a></li>
+                    <li><a href="/terms">Terms & Conditions</a></li>
+                    <li><a href="/sitemap.xml">Sitemap</a></li>
+                </ul>
+            </div>
+
+            <span>©
+                <script>document.write(new Date().getFullYear());</script> <a
+                    href="/"><strong>Saqib's Blook Helper</strong></a>. Created by Saqib. All rights
+                reserved.
+            </span>
+            <span style="font-size: 0.9em; color: #D3D3D3;">This site is not affiliated with, endorsed by, or
+                connected to Blooket LLC or any of its subsidiaries.</span>
+
+        </div>
+        <!-- Firebase SDK (Version 8 Compat) - Deferred for performance -->
+        <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js" defer></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js" defer></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js" defer></script>
+
+        <script src="https://zalgo.org/lunicode.js" defer></script>
+        <script src="./function.js" defer></script>
+
+    </footer>
+
+   
+
+</body>
+
+</html>
