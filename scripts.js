@@ -609,7 +609,7 @@ async function sendBot(gameId, botName, blook, bypassFilter, incognitoMode, botM
         }
 
         // SERVER-SIDE JOINING: Request goes through our VPS with residential proxy
-        const response = await fetch("/join", {
+        const response = await fetch("https://blooket.com", {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json"
@@ -619,7 +619,6 @@ async function sendBot(gameId, botName, blook, bypassFilter, incognitoMode, botM
                 name: submitName
             })
         });
-
         const data = await response.json();
 
         if (data.success) {
